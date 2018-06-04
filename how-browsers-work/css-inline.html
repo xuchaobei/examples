@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>内嵌JS文件也会阻塞HTML的解析</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        background: grey;
+      }
+      
+      .text-primary {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="text-primary">
+      Hello, world !
+    </div>
+    <div>
+      Hello, dream !
+    </div>
+  </body>
+
+</html>

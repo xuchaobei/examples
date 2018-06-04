@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>动态脚本插入</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      var scriptA = document.createElement("script");
+      scriptA.src="a.js";
+      var scriptB = document.createElement("script");
+      scriptB.src="b.js";
+      document.getElementsByTagName("head")[0].appendChild(scriptB);
+      document.getElementsByTagName("head")[0].appendChild(scriptA);
+    </script>
+  </head>
+
+  <body>
+    <div class="text-primary">
+      Hello, world !
+    </div>
+    <div>
+      Hello, dream !
+    </div>
+  </body>
+
+</html>
