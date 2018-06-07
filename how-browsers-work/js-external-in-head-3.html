@@ -4,17 +4,10 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>内嵌CSS不阻塞HTML的解析</title>
+    <title>外链JS阻塞HTML解析3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {
-        background: grey;
-      }
-      
-      .text-primary {
-        color: red;
-      }
-    </style>
+    <script src="b.js"></script>
+    <script src="a.js"></script>
   </head>
 
   <body>
